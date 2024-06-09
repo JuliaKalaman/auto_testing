@@ -27,7 +27,7 @@ axios.interceptors.response.use(
 );
 
 async function checkGetPost() {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/posts/15')
+    const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
     console.log('Данные get запроса:', response.data);
 }
 checkGetPost()
