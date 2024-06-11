@@ -107,10 +107,14 @@ const config = {
   // projects: undefined,
 
   // Use this configuration option to add custom reporters to Jest
-  reporters: ["default", ["jest-html-reporters", {
-    darkTheme: true,
-    openReport: true
-  }]],
+  reporters: [
+    "default",
+    ["jest-html-reporters",
+      {
+        darkTheme: true,
+        openReport: false,
+      }
+    ]],
 
   // Automatically reset mock state before every test
   // resetMocks: false,
